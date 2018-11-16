@@ -3,19 +3,19 @@
 
     function RenderMenuItem({ programa }) {
         return(
-            <Row className="mt-4"> 
+            <Row className="mt-4 bg-dblack no-gutters"> 
                 <Col md="6">
-                    <img className="img img-fluid" src={programa.image} alt={programa.title} />
+                    <img className="img-fluid" src={programa.image} alt={programa.title} />
                 </Col>
                         
-                <div style={programa} className="text-white lead col-md-6 card">  
-                            
+                <Col md="6" style={programa} className="text-white lead card">  
+                    <div clasName="container mr-2">        
                     <h3>{programa.title}</h3> 
                     <h3>{programa.horario}</h3>
                     <h5>{programa.conductor}</h5>
                     <p>{programa.descriptions}</p>
-                            
-                </div>  
+                    </div>
+                </Col>  
             </Row>
         );
     }

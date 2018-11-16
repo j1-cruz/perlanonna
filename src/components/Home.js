@@ -1,4 +1,5 @@
 import React from 'react';
+import { Jumbotron } from 'reactstrap';
 
 //Css
 import './App.css';
@@ -6,8 +7,17 @@ import './App.css';
 
 export default () => (
   <div className="d-none d-sm-block">
-    <img className="img-fluid" src="assets/images/fondo8.jpeg" alt="imgequipo" />
-    <div className="row no-gutters bordertop">
+    <Jumbotron className="jumbotron-fluid bg-dblue text-white">
+      <div className="container">
+          <h1> Tu compañera</h1>
+          <p>
+            Con más de 30 años al aire informando y entreteniendo a la comunidad de Ayacucho y la zona.
+            Siendo la primera FM de la ciudad, contamos con
+            una amplia grilla de programación para todo público.
+          </p>
+      </div>
+    </Jumbotron>
+    <div className="row no-gutters">
       <div className="col-md-6">
         <img className="img-fluid" src="assets/images/equipo2.jpg" alt="imgequipo" />
       </div>
