@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import Router from './components/Router';
+import Main from './components/Main';
+import './components/App.css';
+
 
 
 export default class App extends Component {
 
   render() {
     return (
-      <div className="bg-dwhite">
-        <Router />
-      </div>
+       <Main />
     );
   }
 }

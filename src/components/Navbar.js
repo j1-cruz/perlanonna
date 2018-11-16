@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import { NavLink } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -6,7 +8,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -30,15 +31,15 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar className="bg-dblue" dark expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand to="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Components</NavLink>
+                <NavLink to="/" className="nav-link">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Header">GitHub</NavLink>
+                <NavLink to="/programas" className="nav-link">Programacion</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
