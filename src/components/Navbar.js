@@ -1,6 +1,8 @@
+//Dependencis
 import React from 'react';
-import './App.css';
 import { NavLink } from 'react-router-dom';
+import Reproductor from './Reproductor';
+
 import {
   Collapse,
   Navbar,
@@ -9,6 +11,8 @@ import {
   Nav,
   NavItem,
    } from 'reactstrap';
+//Css
+import './App.css';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -27,23 +31,42 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar className="bg-dblue" dark expand="md">
-          <NavbarBrand to="/"><img src="assets/images/logofm.png" alt="logofm88" width={70} height={70}/></NavbarBrand>
+        <Navbar className="bg-dblue d-none d-md-flex" dark expand="md">
+            <NavbarBrand to="/"><img src="assets/images/logofm.png"         alt="logofm88"      width={70} height={70}/>
+            </NavbarBrand>
+            <NavbarBrand>
+                <Reproductor />
+            </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="mr-auto">
             <NavItem>
-                <NavLink to="/" className="nav-link">Home</NavLink>
+                <NavLink to="/" className="nav-link">
+                  <span className="fa fa-home fa-lg mr-1"></span>
+                  Home
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/programas" className="nav-link">Programacion</NavLink>
+                <NavLink to="/programas" className="nav-link">
+                <span className="fa fa-list fa-lg mr-1"></span>
+                  Programacion
+                </NavLink>
               </NavItem>
             </Nav>
             <Nav navbar className="ml-auto">
-              <NavItem clasName="ml-auto">
-                <NavLink to="/programas"><img src="assets/images/social-icon/face6.png" alt="logofm88" width={45} height={45}/></NavLink>
-                <NavLink to="/programas"><img src="assets/images/social-icon/what6.png" alt="logofm88" width={45} height={45}/></NavLink>
-                <NavLink to="/programas"><img src="assets/images/social-icon/insta6.png" alt="logofm88" width={45} height={45}/></NavLink>
+              <NavItem>
+                <a className="mr-2" href="https://www.facebook.com/fm88ayacucho/">
+                    <img src="assets/images/social-icon/face6.png"
+                    
+                    alt="logofm88" width={45} height={45}/>
+                </a>
+                <NavLink className="mr-2" to="/programas">
+                    <img src="assets/images/social-icon/what6.png" alt="logofm88" width={45} height={45}/>
+                </NavLink>
+                <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
+                    <img src="assets/images/social-icon/insta6.png" 
+                    alt="logofm88" width={45} height={45}/>
+                </a>
              </NavItem>
             </Nav>  
           </Collapse>

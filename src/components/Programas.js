@@ -1,5 +1,6 @@
  import React from 'react';
  import {  Row, Col}  from 'reactstrap';
+ import Buttons from './Buttons'; 
 
     function RenderMenuItem({ programa }) {
         return(
@@ -34,7 +35,8 @@
     return(
         <div className="container">
             <div>
-                  {menu}
+                <Buttons />
+                {menu}
             </div>
         </div>
     );

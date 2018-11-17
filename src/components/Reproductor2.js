@@ -17,12 +17,10 @@ class Reproductor extends Component {
 
   render() {
     return (
-      <div className="mr-2" data-toggle="tooltip" data-placement="top" title="Escuchanos!" >
-        <span onClick={this.togglePlay}>{this.state.play ? <img alt="alt" width={60} height={60} src="assets/images/playb.png"/> : <img alt="img" width={60} height={60} src="assets/images/pausena.svg"/> }</span>
-      </div>
+
+        <div className="text-center mt-5" onClick={this.togglePlay}>{this.state.play ? <img alt="alt" width={130} height={130} src="assets/images/playb.png"/> : <img alt="img" width={130} height={130} src="assets/images/pausena.svg" /> }
+        </div>
     );
   }
 }
-
-
 export default Reproductor;

@@ -8,7 +8,7 @@ export const PROGRAMAS =
                 descriptions: 'programa central',
                 conductor: 'Mauricio gracia. Facundo Membrilla',
                 direccion: 'Luciano Ocaño',
-                image: 'assets/images/equipo2.jpg',
+                image: 'assets/images/programas/de7a8.jpg',
                 backgroundColor: '#870000'
             },
             {
@@ -19,7 +19,7 @@ export const PROGRAMAS =
                 conductor: 'Mauricio gracia. Facundo Membrilla',
                 movil:'Leonardo Ledesma',
                 direccion: 'Luciano Ocaño',
-                image: 'assets/images/equipo2.jpg',
+                image: 'assets/images/programas/radiomovil.jpg',
                 backgroundColor: '#2F0743'
             },
             {
@@ -33,18 +33,29 @@ export const PROGRAMAS =
                 backgroundColor: '#237a57'
             },
             {
-                id: 3,
+                id: 4,
+                title: 'El Espresso',
+                horario: '8:00hs a 13:00hs',
+                descriptions: 'programa central',
+                conductor: 'Maria Del Carmen',
+                movil:'Leonardo Ledesma',
+                direccion: 'Luciano Ocaño',
+                image: 'assets/images/programas/ricardo.jpeg',
+                backgroundColor:'#6a9113'
+            },
+            {
+                id: 5,
                 title: 'En Compania',
                 horario: '8:00hs a 13:00hs',
                 descriptions: 'programa central',
                 conductor: 'Maria Del Carmen',
                 movil:'Leonardo Ledesma',
                 direccion: 'Luciano Ocaño',
-                image: 'assets/images/encompania.jpeg',
+                image: 'assets/images/programas/encompañia.jpg',
                 backgroundColor:'#6a9113'
             },
             {
-                id: 4,
+                id: 6,
                 title: 'logofm',
                 horario: '8:00hs a 13:00hs',
                 descriptions: 'grupal',
