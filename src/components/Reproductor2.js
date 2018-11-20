@@ -18,7 +18,7 @@ class Reproductor extends Component {
   render() {
     return (
 
-        <div className="text-center mt-5" onClick={this.togglePlay}>{this.state.play ? <img alt="alt" width={130} height={130} src="assets/images/playb.png"/> : <img alt="img" width={130} height={130} src="assets/images/pausena.svg" /> }
+        <div className="text-center mt-5 animated bounceIn" onClick={this.togglePlay}>{this.state.play ? <img alt="alt" width={130} height={130} src="assets/images/playb.png"/> : <img alt="img" width={130} height={130} src="assets/images/pausena.svg" /> }
         </div>
     );
   }
