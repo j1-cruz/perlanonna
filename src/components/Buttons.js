@@ -6,6 +6,9 @@ export default () => (
 <div className="container m-3">
     <h3>La mejor programcion, para mantenerte informado durante todo el dia</h3>
 </div>
+    
+    <hr />
+    
 <div className="container mt-2">
   <div className="row">
     <div className="col-sm-6">
@@ -32,6 +35,7 @@ export default () => (
         <h5 className="list-group-item bg-warning text-white">Sabado</h5>
         <a href="#manosalaobra" type="button" className="btn btn-outline-warning text-dark font-weight-bold mb-1">9:30hs a 10:30hs Manos a la obra</a>
         <a href="#hablandoclaro" type="button" className="btn btn-outline-warning text-dark font-weight-bold mb-1">10:30hs a 13:00hs Hablando claro</a>
+        <a href="#manosalaobra" type="button" className="btn btn-outline-warning text-dark font-weight-bold mb-1">17:00hs a 20:00hs Notorius</a>
       </ul>
       <ul className="list-group">
           <h5 className="list-group-item active bg-info">Domingo</h5>

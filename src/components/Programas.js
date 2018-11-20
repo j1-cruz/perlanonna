@@ -4,6 +4,7 @@
 
     function RenderMenuItem({ programa }) {
         return(
+            <div className="container">
             <Row className="mt-4 bg-dblack no-gutters"> 
                 <Col md="6">
                     <img className="img-fluid" src={programa.image} alt={programa.title} />
@@ -19,6 +20,7 @@
                     </div>
                 </Col>  
             </Row>
+            </div>
         );
     }
 
@@ -35,8 +37,10 @@
                                            
     return(
         <div>
-                <Buttons />
-                {menu}
+            <Buttons />
+            <hr />
+            {menu}
+            <hr />
         </div>
     );
     }
