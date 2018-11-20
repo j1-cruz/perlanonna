@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Programas from './Programas';
 import { PROGRAMAS } from '../shared/programas';
 import Navbar from './Navbar';
+import Header from './Header'
 import Nav from './Nav';
 import Footer from './Footer';
 import Home from './Home';
@@ -26,6 +27,7 @@ class Main extends Component {
          <Router>
           <div>
             <Navbar />
+            <Header />
             <Nav />
               <Switch>
                 <Route path="/programas" component={() => <Programas programas={this.state.programas} />} />

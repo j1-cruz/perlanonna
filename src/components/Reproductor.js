@@ -17,8 +17,8 @@ class Reproductor extends Component {
 
   render() {
     return (
-      <div className="mr-2" data-toggle="tooltip" data-placement="top" title="Escuchanos!" >
-        <span onClick={this.togglePlay}>{this.state.play ? <img alt="alt" width={60} height={60} src="assets/images/playb.png"/> : <img alt="img" width={60} height={60} src="assets/images/pausena.svg"/> }</span>
+      <div className="mt-4 animated bounceIn">
+        <span className="animated" onClick={this.togglePlay} data-toggle="tooltip" data-placement="top" title="Escuchanos!">{this.state.play ? <img alt="alt" width={160} height={160} src="assets/images/playb.png"/> : <img alt="img" width={160} height={160} src="assets/images/pausena.svg"/> }</span>
       </div>
     );
   }
