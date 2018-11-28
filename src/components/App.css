@@ -41,6 +41,24 @@ background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-2
 background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bg-coral{ background: coral}
+.bg-red{ background: #870000 }
+.bg-violet{ background: mediumvioletred}
+.bg-brown {background: brown}
+.bg-burlywood {background: burlywood}
+.bg-chocolate {background: chocolate}
+.bg-cadetblue {background:cadetblue}
+.bg-darckgoldenrod {background:darkgoldenrod}
+.bg-1 {background: #2F0743}
+.bg-2 {background: #237a57}
+.bg-3 {background: #c31432}
+.bg-4 {background: #6a9113}
+.bg-5 {background: #CAC531}
+.bg-6 {background: #5D26C1}
+.bg-7 {background: #f7b733}
+
+
+
 .hero-image {
   height: 700px;
   background-position:center; /* Center the image */

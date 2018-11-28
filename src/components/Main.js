@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 
 //Components
 import Programas from './Programas';
-import { PROGRAMAS } from '../shared/programas';
 import Navbar from './Navbar';
 import Header from './Header'
 import Nav from './Nav';
@@ -14,14 +13,6 @@ import Home from './Home';
 
 class Main extends Component {
 
-      constructor(props){
-        super(props);
-
-        this.state = {
-            programas: PROGRAMAS
-        };
-      }
-
   render() {
     return (   
          <Router>
@@ -30,10 +21,10 @@ class Main extends Component {
             <Header />
             <Nav />
               <Switch>
-                <Route path="/programas" component={() => <Programas programas={this.state.programas} />} />
+                <Route path="/programas" component={Programas} />
                 <Route exact path="/" component={Home} />
                 <Redirect to="/home" /> 
-                </Switch>
+              </Switch>
             <Footer />
           </div>
         </Router>     
