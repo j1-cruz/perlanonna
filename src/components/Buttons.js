@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 export default () => (
 <div>
 <div className="container">
-    <h3 className="text-center mt-2">La mejor programación, para acompañarte durante todo el día</h3>
+    <h3 className="text-center mt-3 josefin">La mejor programación, para acompañarte durante todo el día</h3>
 </div>
     
     <hr />

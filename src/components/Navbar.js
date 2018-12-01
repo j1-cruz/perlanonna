@@ -54,7 +54,7 @@ export default class Example extends React.Component {
                     alt="logofm88" width={45} height={45}/>
                 </a>
                 <NavLink className="mr-2" to="/programas">
-                    <img src="assets/images/social-icon/what6.png" alt="logofm88" width={45} height={45}/>
+                    <img src="assets/images/social-icon/what6.png" data-toggle="tooltip" data-placement="top" title="2494-381079" alt="logofm88" width={45} height={45}/>
                 </NavLink>
                 <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
                     <img src="assets/images/social-icon/insta6.png" 

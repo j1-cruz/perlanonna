@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => (
-    <h1>Home</h1>
+    <img className="img-fluid" src="assets/images/programas/fm882.jpg" alt="Img de7a8" />
 )

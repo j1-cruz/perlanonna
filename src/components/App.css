@@ -68,3 +68,16 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
   background-color: #cccccc; /* Used if the image is unavailable */
   background-repeat: no-repeat; /* Do not repeat the image */
 }
+
+.font {
+    font-family: 'Text Me One', sans-serif; 
+}
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+.ave {
+    font-family: 'Sedgwick Ave', cursive;
+}
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
