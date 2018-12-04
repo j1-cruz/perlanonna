@@ -1,3 +1,23 @@
+li {
+    list-style: none;
+}
+
+footer {
+    border-top: solid 2px;
+    border-color:#141E30;
+}
+
+.borderprogram {
+    border-top: solid 1px;
+    border-color:#434343;
+    border-bottom: solid 1px;
+    border-color:#434343;
+}
+.borderprogram2 {
+    border-top: solid 1px;
+    border-color:#434343;
+}
+
 .bg-dblack {
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
