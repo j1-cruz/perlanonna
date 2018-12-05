@@ -7,7 +7,7 @@ import './App.css';
 const Footer = () => (
 				<div>
 					<footer className="row d-sm-flex no-gutters bg-dark lead align-items-end">
-					<ul className="col-md-4 text-white rubik text-center">
+					<ul className="col-md-4 text-white rubik text-center mt-2">
 						<li className="ml-2">Whatsapp: 2494-381079</li>
 						<li className="ml-2">Tel: 2296-453507</li>
 						<li className="ml-2">Mail: Fm88ayacucho@gmail.com</li>

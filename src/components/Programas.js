@@ -134,10 +134,10 @@ export default () => (
           <Col md="6">
             <img height={300} width={490} 
             className="d-none d-lg-flex"
-            src="assets/images/programas/dial.jpeg" alt="img La100" />
+            src="assets/images/programas/fm100.jpg" alt="img La100" />
             <img
             className="img-fluid d-block d-lg-none"
-            src="assets/images/programas/dial.jpeg" alt="img La100" />
+            src="assets/images/programas/fm100.jpg" alt="img La100" />
           </Col>
       </Row>
     

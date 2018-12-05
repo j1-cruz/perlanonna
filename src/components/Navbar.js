@@ -17,10 +17,14 @@ export default class Example extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.toggle2 = this.toggle.bind(this);
     this.state = {
       isOpen: false
     };
   }
+    
+ 
+    
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -48,14 +52,14 @@ export default class Example extends React.Component {
             </Nav>
             <Nav navbar className="ml-auto mt-1">
               <NavItem>
-                <a className="mr-2" href="https://www.facebook.com/fm88ayacucho/">
+                <a className="mr-1" href="https://www.facebook.com/fm88ayacucho/">
                     <img src="assets/images/social-icon/face4.png"
                     
                     alt="logofm88" width={40} height={40}/>
                 </a>
-                <NavLink className="mr-2" to="/programas">
-                    <img src="assets/images/social-icon/what4.png" data-toggle="tooltip" data-placement="top" title="2494-381079" alt="logofm88" width={40} height={40}/>
-                </NavLink>
+        
+                    <img id="what" className="mr-1" src="assets/images/social-icon/what4.png" alt="logofm88" width={40} height={40}/>
+                
                 <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
                     <img src="assets/images/social-icon/insta4.png" 
                     alt="logofm88" width={40} height={40}/>
