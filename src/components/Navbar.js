@@ -29,7 +29,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar className="bg-dblue d-none d-sm-flex" dark expand="md">
+        <Navbar className="bg-dceleste d-none d-sm-flex" dark expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="mr-auto">
@@ -49,16 +49,16 @@ export default class Example extends React.Component {
             <Nav navbar className="ml-auto mt-1">
               <NavItem>
                 <a className="mr-2" href="https://www.facebook.com/fm88ayacucho/">
-                    <img src="assets/images/social-icon/face6.png"
+                    <img src="assets/images/social-icon/face4.png"
                     
-                    alt="logofm88" width={45} height={45}/>
+                    alt="logofm88" width={40} height={40}/>
                 </a>
                 <NavLink className="mr-2" to="/programas">
-                    <img src="assets/images/social-icon/what6.png" data-toggle="tooltip" data-placement="top" title="2494-381079" alt="logofm88" width={45} height={45}/>
+                    <img src="assets/images/social-icon/what4.png" data-toggle="tooltip" data-placement="top" title="2494-381079" alt="logofm88" width={40} height={40}/>
                 </NavLink>
                 <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
-                    <img src="assets/images/social-icon/insta6.png" 
-                    alt="logofm88" width={45} height={45}/>
+                    <img src="assets/images/social-icon/insta4.png" 
+                    alt="logofm88" width={40} height={40}/>
                 </a>
              </NavItem>
             </Nav>  

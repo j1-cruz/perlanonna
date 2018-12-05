@@ -11,7 +11,7 @@ const Footer = () => (
 						<li className="ml-2">Whatsapp: 2494-381079</li>
 						<li className="ml-2">Tel: 2296-453507</li>
 						<li className="ml-2">Mail: Fm88ayacucho@gmail.com</li>
-						<li className="ml-2">Dirección España 1135</li>
+						<li className="ml-2">Dirección: España 1135</li>
 						<li className="ml-2">Codigó postal: 7150</li>
 					</ul>
 					<div className="col-md-4">
