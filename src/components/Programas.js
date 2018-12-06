@@ -90,7 +90,7 @@ export default () => (
 				la hora de acompañarte. Sin estructura, mucha música,
 				informaciones locales, juegos e interacción con la audiencia
 				de forma diaria, todo esto comprimido en 2hs hacen que el
-				dinamismo sea constante para vos que tu tarde sea mas liviana.
+				dinamismo sea constante para que tu tarde sea mas liviana.
 				</h5>
 				<p className="text-white ml-2">Conductor y operacion tecnica: Facundo Membrilla</p>
             </Col>

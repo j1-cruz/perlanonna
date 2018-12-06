@@ -59,17 +59,17 @@ export default class Example extends React.Component {
             </Nav>
             <Nav navbar className="ml-auto mt-1">
               <NavItem>
-                <a className="mr-1" href="https://www.facebook.com/fm88ayacucho/">
-                    <img src="assets/images/social-icon/face4.png"
-                    alt="logofm88" width={40} height={40}/>
+                <a className="mr-2" href="https://www.facebook.com/fm88ayacucho/">
+                    <img src="assets/images/social-icon/face9.png"
+                    alt="logofm88" width={30} height={30}/>
                 </a>
         
-                    <img id="whatsapp" className="mr-1" src="assets/images/social-icon/what4.png" alt="logofm88" width={40} height={40}/>
+                    <img id="whatsapp" className="mr-2" src="assets/images/social-icon/what8.png" alt="logofm88" width={30} height={30}/>
                     <Tooltip placement="top" isOpen={this.state.tooltipOpen3} target="whatsapp" toggle={this.toggle3}>2494-381078</Tooltip>
                 
-                <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
-                    <img src="assets/images/social-icon/insta4.png" 
-                    alt="logofm88" width={40} height={40}/>
+                <a className="mr-1" href="https://www.instagram.com/fm88_89.3/?hl=es-la">
+                    <img src="assets/images/social-icon/insta8.png" 
+                    alt="logofm88" width={30} height={30}/>
                 </a>
              </NavItem>
             </Nav>  
