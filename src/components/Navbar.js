@@ -8,6 +8,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  Tooltip
    } from 'reactstrap';
 //Css
 import './App.css';
@@ -17,12 +18,18 @@ export default class Example extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.toggle2 = this.toggle.bind(this);
+    this.toggle3 = this.toggle3.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      tooltipOpen3: false
     };
   }
     
+  toggle3(){
+        this.setState({
+          tooltipOpen3: !this.state.tooltipOpen3
+        });
+    }
  
     
   toggle() {
@@ -54,11 +61,11 @@ export default class Example extends React.Component {
               <NavItem>
                 <a className="mr-1" href="https://www.facebook.com/fm88ayacucho/">
                     <img src="assets/images/social-icon/face4.png"
-                    
                     alt="logofm88" width={40} height={40}/>
                 </a>
         
-                    <img id="what" className="mr-1" src="assets/images/social-icon/what4.png" alt="logofm88" width={40} height={40}/>
+                    <img id="whatsapp" className="mr-1" src="assets/images/social-icon/what4.png" alt="logofm88" width={40} height={40}/>
+                    <Tooltip placement="top" isOpen={this.state.tooltipOpen3} target="whatsapp" toggle={this.toggle3}>2494-381078</Tooltip>
                 
                 <a href="https://www.instagram.com/fm88_89.3/?hl=es-la">
                     <img src="assets/images/social-icon/insta4.png" 
