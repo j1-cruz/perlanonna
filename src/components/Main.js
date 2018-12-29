@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 
 //Components
 import Programas from './Programas';
-import Navbar from './Navbar';
-import Header from './Header'
+import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
 import Home from './Home';
@@ -17,12 +16,11 @@ class Main extends Component {
     return (   
          <Router>
           <div>
-            <Navbar />
-            <Header />
+            <Home />
             <Nav />
               <Switch>
                 <Route path="/programas" component={Programas} />
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={Header} />
                 <Redirect to="/home" /> 
               </Switch>
             <Footer />
