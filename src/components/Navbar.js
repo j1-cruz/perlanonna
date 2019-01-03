@@ -8,7 +8,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Tooltip
+  Tooltip    
    } from 'reactstrap';
 //Css
 import './App.css';
