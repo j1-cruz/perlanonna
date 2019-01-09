@@ -10,6 +10,7 @@ import { Card, CardTitle, CardText, CardImg, CardImgOverlay, Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem }  from 'reactstrap';
+import './App.css';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -35,8 +36,11 @@ export default class Example extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+    
   render() {
+      
     return (
+        <div>
           <Card inverse>
             <CardImg width="100%"  src="assets/images/perlanonna.png" alt="Card image cap" />
             <CardImgOverlay>
@@ -70,11 +74,45 @@ export default class Example extends React.Component {
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
-                      <DropdownItem divider />
                       <DropdownItem>
                         <NavItem>
                             <NavLink to="/cuencos" className="nav-link text-danger">
                               Cuencos
+                            </NavLink>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                            <NavLink to="/cuencos" className="nav-link text-danger">
+                              Tazas
+                            </NavLink>
+                        </NavItem>
+                      </DropdownItem>
+                        <DropdownItem>
+                        <NavItem>
+                            <NavLink to="/cuencos" className="nav-link text-danger">
+                              Chops
+                            </NavLink>
+                        </NavItem>
+                      </DropdownItem>
+                        <DropdownItem>
+                        <NavItem>
+                            <NavLink to="/cuencos" className="nav-link text-danger">
+                              Cocina
+                            </NavLink>
+                        </NavItem>
+                      </DropdownItem>
+                        <DropdownItem>
+                        <NavItem>
+                            <NavLink to="/cuencos" className="nav-link text-danger">
+                              Macetaz
+                            </NavLink>
+                        </NavItem>
+                      </DropdownItem>
+                        <DropdownItem>
+                        <NavItem>
+                            <NavLink to="/cuencos" className="nav-link text-danger">
+                              Cets
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
@@ -101,6 +139,10 @@ export default class Example extends React.Component {
         </Navbar>
             </CardImgOverlay>
           </Card>
+            <Card>
+            <h1 className="text-center dancing bg-dpink">"En un mundo de plástico y ruido, quiero ser barro y silencio"</h1>
+            </Card>
+        </div>
     );
   }
 }

@@ -3,12 +3,22 @@ import React, { Component} from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 //Components
-import Header from './Header';
+import Productos from './Productos';
 import Footer from './Footer';
 import Home from './Home';
-
+import Mates from './productos/mates/Mates2';
+import Tazas from './productos/tazas/Tazas';
+import { PRODUCTOS } from '../shared/productos';
+import { MATES } from './productos/mates/mates';
 
 class Main extends Component {
+    constructor(props){
+      super(props);
+
+      this.state = {
+        productos: PRODUCTOS
+      }
+    }
 
   render() {
     return (   
@@ -16,8 +26,9 @@ class Main extends Component {
           <div>
             <Home />
               <Switch>
-                <Route path="/header" component={Header} />
-                <Route exact path="/" component={Header} />
+                <Route exact path="/" component={() => <Productos productos={this.state.productos} />} />
+                <Route  path="/mates" component={Mates} />
+                <Route  path="/tazas" component={Tazas} />
                 <Redirect to="/home" /> 
               </Switch>
             <Footer />
