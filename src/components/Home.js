@@ -10,6 +10,8 @@ import { Card, CardTitle, CardText, CardImg, CardImgOverlay, Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem }  from 'reactstrap';
+
+import Carrousel from './Carrousel';
 import './App.css';
 
 export default class Example extends React.Component {
@@ -142,6 +144,7 @@ export default class Example extends React.Component {
             <Card>
             <h1 className="text-center dancing bg-dpink">"En un mundo de plástico y ruido, quiero ser barro y silencio"</h1>
             </Card>
+            <Carrousel />
         </div>
     );
   }
