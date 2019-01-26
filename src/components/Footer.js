@@ -8,7 +8,7 @@ const Footer = () => (
 				<div>
 					<footer className="row d-sm-flex no-gutters lead align-items-end">
 					<ul className="col-md-4 rubik text-center mt-2">
-						<p>Sin Brujula</p>
+						<p>Perlanonna</p>
 					</ul>
 					<div className="col-md-4">
 					
