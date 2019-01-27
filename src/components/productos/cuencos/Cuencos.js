@@ -3,14 +3,14 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, Col, Row,
        Modal, ModalHeader, Button } from 'reactstrap';
 
-import { TAZAS } from './imgtazas.js';
+import { CUENCOS } from './imgcuencos.js';
 
 export default class Mates extends Component {
     constructor(props){
         super(props);
         
         this.state = {
-          product: TAZAS,
+          product: CUENCOS,
           isModalOpen: false,
           selecModal: null
       };

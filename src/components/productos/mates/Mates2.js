@@ -10,7 +10,7 @@ export default class Mates extends Component {
         super(props);
         
         this.state = {
-          mates: MATES,
+          product: MATES,
           isModalOpen: false,
           selecModal: null
       };
@@ -18,33 +18,33 @@ export default class Mates extends Component {
         this.toggleModal = this.toggleModal.bind(this);
     }
     
-    onModal(mates){
+    onModal(product){
         this.setState({
-            selecModal: mates
+            selecModal: product
         })
     }
     
-    toggleModal(mates) {
+    toggleModal(product) {
         this.setState({
             isModalOpen: !this.state.isModalOpen
         });
     }
     
     
-     renderModal(mates){ 
-         if (mates != null)
+     renderModal(product){ 
+         if (product != null)
             return(
               <Modal className="modal-lg" isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>
                     <Row>
                         <Col>
-                            <CardImg width="100%" src={mates.image} alt={mates.title} />
+                            <CardImg width="100%" src={product.image} alt={product.title} />
                         </Col>
                         <Col>
-                            <CardImg width="100%" src={mates.image2} alt={mates.title} />
+                            <CardImg width="100%" src={product.image2} alt={product.title} />
                         </Col>
                         <Col>
-                            <CardImg width="100%" src={mates.image3} alt={mates.title} />
+                            <CardImg width="100%" src={product.image3} alt={product.title} />
                         </Col>
                     </Row>
                  </ModalHeader>
@@ -56,17 +56,17 @@ export default class Mates extends Component {
             
     render(){
         
-    const mate = this.state.mates.map((mates) => {
+    const producto = this.state.product.map((product) => {
         return (
-         <div key={mates.id} className="col-12 col-md-4">
+         <div key={product.id} className="col-12 col-md-4">
            <Col className="mt-2">
-             <Card onClick={() => this.onModal(mates)}>
+             <Card onClick={() => this.onModal(product)}>
               <CardBody>
-               <CardTitle onClick={this.toggleModal}>{mates.title}</CardTitle>
+               <CardTitle onClick={this.toggleModal}>{product.title}</CardTitle>
               </CardBody>
-              <CardImg width="100%" src={mates.image} alt={mates.title} />
+              <CardImg width="100%" src={product.image} alt={product.title} />
               <CardBody>
-               <CardText>{mates.description}</CardText>
+               <CardText>{product.description}</CardText>
                  <Button outline color="primary" onClick={this.toggleModal}>perfiles</Button>
                 </CardBody>
                </Card>
@@ -80,7 +80,7 @@ export default class Mates extends Component {
     return (
         
         <div className="row">
-             {mate}
+             {producto}
              {this.renderModal(this.state.selecModal)}
         </div>
         

@@ -3,14 +3,14 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, Col, Row,
        Modal, ModalHeader, Button } from 'reactstrap';
 
-import { CHOPS } from './chops.js';
+import { CHOPS } from './imgchops.js';
 
 export default class Mates extends Component {
     constructor(props){
         super(props);
         
         this.state = {
-          chops: CHOPS,
+          product: CHOPS,
           isModalOpen: false,
           selecModal: null
       };
@@ -18,33 +18,33 @@ export default class Mates extends Component {
         this.toggleModal = this.toggleModal.bind(this);
     }
     
-    onModal(chops){
+    onModal(product){
         this.setState({
-            selecModal: tazas
+            selecModal: product
         })
     }
     
-    toggleModal(chops) {
+    toggleModal(product) {
         this.setState({
             isModalOpen: !this.state.isModalOpen
         });
     }
     
     
-     renderModal(chops){ 
-         if (tazas != null)
+     renderModal(product){ 
+         if (product != null)
             return(
               <Modal className="modal-lg" isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>
                     <Row>
                         <Col>
-                            <CardImg width="100%" src={tazas.image} alt={tazas.title} />
+                            <CardImg width="100%" src={product.image} alt={product.title} />
                         </Col>
                         <Col>
-                            <CardImg width="100%" src={tazas.image2} alt={tazas.title} />
+                            <CardImg width="100%" src={product.image2} alt={product.title} />
                         </Col>
                         <Col>
-                            <CardImg width="100%" src={tazas.image3} alt={tazas.title} />
+                            <CardImg width="100%" src={product.image3} alt={product.title} />
                         </Col>
                     </Row>
                  </ModalHeader>
@@ -56,17 +56,17 @@ export default class Mates extends Component {
             
     render(){
         
-    const taza = this.state.tazas.map((tazas) => {
+    const producto = this.state.product.map((product) => {
         return (
-         <div key={tazas.id} className="col-12 col-md-4">
+         <div key={product.id} className="col-12 col-md-4">
            <Col className="mt-2">
-             <Card onClick={() => this.onModal(tazas)}>
+             <Card onClick={() => this.onModal(product)}>
               <CardBody>
-               <CardTitle onClick={this.toggleModal}>{tazas.title}</CardTitle>
+               <CardTitle onClick={this.toggleModal}>{product.title}</CardTitle>
               </CardBody>
-              <CardImg width="100%" src={tazas.image} alt={tazas.title} />
+              <CardImg width="100%" src={product.image} alt={product.title} />
               <CardBody>
-               <CardText>{tazas.description}</CardText>
+               <CardText>{product.description}</CardText>
                  <Button outline color="primary" onClick={this.toggleModal}>perfiles</Button>
                 </CardBody>
                </Card>
@@ -80,7 +80,7 @@ export default class Mates extends Component {
     return (
         
         <div className="row">
-             {taza}
+             {producto}
              {this.renderModal(this.state.selecModal)}
         </div>
         

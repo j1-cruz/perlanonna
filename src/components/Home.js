@@ -85,36 +85,36 @@ export default class Example extends React.Component {
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                            <NavLink to="/cuencos" className="nav-link text-danger">
-                              Tazas
+                            <NavLink to="/platos" className="nav-link text-danger">
+                              Platos
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
                         <DropdownItem>
                         <NavItem>
-                            <NavLink to="/cuencos" className="nav-link text-danger">
+                            <NavLink to="/chops" className="nav-link text-danger">
                               Chops
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
                         <DropdownItem>
                         <NavItem>
-                            <NavLink to="/cuencos" className="nav-link text-danger">
+                            <NavLink to="/cocina" className="nav-link text-danger">
                               Cocina
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
                         <DropdownItem>
                         <NavItem>
-                            <NavLink to="/cuencos" className="nav-link text-danger">
+                            <NavLink to="/macetaz" className="nav-link text-danger">
                               Macetaz
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
                         <DropdownItem>
                         <NavItem>
-                            <NavLink to="/cuencos" className="nav-link text-danger">
-                              Cets
+                            <NavLink to="/sets" className="nav-link text-danger">
+                              Sets
                             </NavLink>
                         </NavItem>
                       </DropdownItem>
