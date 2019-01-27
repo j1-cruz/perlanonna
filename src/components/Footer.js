@@ -5,8 +5,7 @@ import React from 'react';
 import './App.css';
 
 const Footer = () => (
-				<div>
-					<footer className="row d-sm-flex no-gutters lead align-items-end">
+					<footer className="row d-sm-flex no-gutters lead align-items-end border mt-2">
 					<ul className="col-md-4 rubik text-center mt-2">
 						<p>Perlanonna</p>
 					</ul>
@@ -18,8 +17,6 @@ const Footer = () => (
 						<a href="#" className="fa fa-arrow-up fa-lg"></a></p>
 					</div>
 				</footer>
-				</div>
-			
 		  );
 
 	export default Footer;

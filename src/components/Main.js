@@ -9,7 +9,6 @@ import Home from './Home';
 import Mates from './productos/mates/Mates2';
 import Tazas from './productos/tazas/Tazas';
 import { PRODUCTOS } from '../shared/productos';
-import { MATES } from './productos/mates/mates';
 
 class Main extends Component {
     constructor(props){

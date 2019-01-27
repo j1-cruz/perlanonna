@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay, Collapse,
+import { Card, CardImg, CardImgOverlay, Collapse,
   Navbar,
   NavbarToggler,
   Nav,

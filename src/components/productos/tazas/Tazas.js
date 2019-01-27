@@ -3,7 +3,7 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, Col, Row,
        Modal, ModalHeader, Button } from 'reactstrap';
 
-import { TAZAS } from './tazas.js';
+import { TAZAS } from './imgtazas.js';
 
 export default class Mates extends Component {
     constructor(props){

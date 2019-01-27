@@ -4,7 +4,7 @@ const Carrousel = () => (
 <div id="carouselExampleInterval" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" data-interval="5000">
-        <div className="row bg-warning">
+        <div className="row bg-info">
             <div className="col">
                 <img src="assets/images/productos/mates/cerrano/cerrano.png" className="d-block w-100" alt="..." />
             </div>
@@ -42,7 +42,7 @@ const Carrousel = () => (
         </div>
     </div>
     <div className="carousel-item" data-interval="5000">
-      <div className="row bg-warning">
+      <div className="row bg-danger">
             <div className="col">
                 <img src="assets/images/productos/mates/cerrano/cerrano.png" className="d-block w-100" alt="..." />
             </div>
