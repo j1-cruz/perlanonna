@@ -34,9 +34,9 @@ export default class Mates extends Component {
      renderModal(product){ 
          if (product != null)
             return(
-              <Modal className="modal-lg" isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+              <Modal className="modal-lg d-blok" isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>
-                    <Row>
+                    <Row className="d-block d-sm-flex">
                         <Col>
                             <CardImg width="100%" src={product.image} alt={product.title} />
                         </Col>

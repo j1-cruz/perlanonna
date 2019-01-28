@@ -123,7 +123,7 @@ export default class Example extends React.Component {
             </Nav>
             <Nav navbar className="ml-auto mt-1">
               <NavItem>
-                <a className="mr-1" href="https://www.facebook.com/fm88ayacucho/">
+                <a className="mr-1" href="https://www.facebook.com/perlanonna/">
                     <img src="assets/images/social-icon/face4.png"
                     alt="logofm88" width={35} height={35}/>
                 </a>
@@ -131,7 +131,7 @@ export default class Example extends React.Component {
                     <img id="whatsapp" className="mr-1" src="assets/images/social-icon/what7.png" alt="logofm88" width={35} height={35}/>
                     <Tooltip placement="top" isOpen={this.state.tooltipOpen3} target="whatsapp" toggle={this.toggle3}>2494-381078</Tooltip>
                 
-                <a className="mr-1" href="https://www.instagram.com/fm88_89.3/?hl=es-la">
+                <a className="mr-1" href="https://www.instagram.com/perlanonna/">
                     <img src="assets/images/social-icon/insta7.png" 
                     alt="logofm88" width={35} height={35}/>
                 </a>
@@ -149,7 +149,7 @@ export default class Example extends React.Component {
 
 
             <Card inverse className="d-sm-none">
-            <CardImg width="100%"  src="assets/images/perlanonna.png" alt="Card image cap" />
+            <CardImg width="100%"  src="assets/images/logoPerlanonna.png" alt="Card image cap" />
             <Card>
               <h6 className="text-center dancing bg-dpink">"En un mundo de plástico y ruido, quiero ser barro y silencio"</h6>
             </Card>
@@ -227,7 +227,7 @@ export default class Example extends React.Component {
             </Nav>
             <Nav navbar className="ml-auto mt-1">
               <NavItem>
-                <a className="mr-1" href="https://www.facebook.com/fm88ayacucho/">
+                <a className="mr-1" href="https://www.facebook.com/perlanonna/">
                     <img src="assets/images/social-icon/face4.png"
                     alt="logofm88" width={25} height={25}/>
                 </a>
@@ -235,7 +235,7 @@ export default class Example extends React.Component {
                     <img id="whatsapp" className="mr-1" src="assets/images/social-icon/what7.png" alt="logofm88" width={25} height={25}/>
                     <Tooltip placement="top" isOpen={this.state.tooltipOpen3} target="whatsapp" toggle={this.toggle3}>2494-381078</Tooltip>
                 
-                <a className="mr-1" href="https://www.instagram.com/fm88_89.3/?hl=es-la">
+                <a className="mr-1" href="https://www.instagram.com/perlanonna/">
                     <img src="assets/images/social-icon/insta7.png" 
                     alt="logofm88" width={25} height={25}/>
                 </a>

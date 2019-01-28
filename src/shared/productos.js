@@ -20,28 +20,14 @@ export const PRODUCTOS =
                 title: 'Chops',
                 descriptions: 'aire',
                 image: 'assets/images/productos/chops/chops.png',
-                link: '/chops',
-                modal: [
-                    {
-                        id: 0,
-                        img1: 'assets/images/programas/de7a8.jpg',
-                        img2: 'assets/images/programas/de7a8.jpg'
-                    }
-                ]  
+                link: '/chops'
             },
             {
                 id: 2,
                 title: 'Sets',
                 descriptions: 'La actualidad ',
                 image: 'assets/images/productos/sets/sets.png',
-                link: '/sets',
-                modal: [
-                    {
-                        id: 0,
-                        img1: 'assets/images/programas/de7a8.jpg',
-                        img2: 'assets/images/programas/de7a8.jpg'
-                    }
-                ]  
+                link: '/sets'
             },
             {
                 id: 4,
